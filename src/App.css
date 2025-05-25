@@ -1,0 +1,338 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: url('./image/57fcfcb87257f9d508b4c6dbf2005890.jpg') no-repeat center center fixed;
+  background-size: cover;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.body-wraper {
+  overflow: hidden;
+  width: 100%;
+  position: relative;
+}
+
+.container {
+  min-width: 100px;
+  text-align: center;
+  margin: 0 auto;
+  padding: 5px;
+}
+
+.weather-container {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(1px);
+  border-radius: 10px;
+  padding: 20px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* ============== CurrentWeather ============== */
+/* ============== CurrentWeather ============== */
+
+.CurrentWeather-form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+}
+
+.CurrentWeather-input {
+  border: 1px solid rgba(255, 255, 255, 0.215);
+  background-color: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(1px);
+  border-radius: 5px;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  color: #fff;
+}
+
+.CurrentWeather-input::placeholder {
+  color: #fff;
+}
+
+.CurrentWeather-input:focus {
+  outline: none;
+}
+
+.CurrentWeather-button {
+  border: 1px solid rgba(255, 255, 255, 0.215);
+  background-color: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(1px);
+  border-radius: 5px;
+  padding: 10px;
+  color: #fff;
+  transition: all .3s;
+}
+
+.CurrentWeather-button:hover {
+  transform: scale(1.05);
+}
+
+.CurrentWeather-button:active {
+  transform: scale(1.00);
+  opacity: 20%;
+}
+
+.current-weather {
+  margin-bottom: 20px;
+}
+
+.temperature {
+  font-size: 80px;
+  font-weight: bold;
+  color: #fff;
+}
+
+.high-low {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 10px 0;
+}
+
+.temperature-Hi, .temperature-Lo {
+  width: 70px;
+  font-size: 40px;
+}
+
+.temperature-Hi span, .temperature-Lo span {
+  font-size: 25px;
+}
+
+.weather-icon {
+  font-size: 100px;
+}
+
+/* ============== DailyForecast ============== */
+/* ============== DailyForecast ============== */
+
+
+
+/* ============== Day ============== */
+/* ============== Day ============== */
+
+.day {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(1px);
+  border-radius: 10px;
+  padding: 10px;
+  /* margin-bottom: 10px; */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-width: 100px;
+  width: 100%;
+}
+
+.day:last-child {
+  margin: 0;
+}
+
+.day-title {
+  transform: rotate(-90deg);
+  font-size: 15px;
+  width: 10%;
+  /* margin-left: -15px; */
+}
+
+.day-hr {
+  border: 1px solid rgba(255, 255, 255, 0.215);
+  height: 100px;
+  margin: -10px 0 -10px 0;
+}
+
+.day-icon {
+  margin-left: 10px;
+  margin-right: 10px;
+  font-size: 50px;
+}
+
+.temps {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-size: 20px;
+  width: 60%;
+}
+
+.temps span {
+  display: grid;
+  width: 15%;
+}
+
+/* ============== Forecast ============== */
+/* ============== Forecast ============== */
+
+.forecast {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+/* ============== ForecastItem ============== */
+/* ============== ForecastItem ============== */
+
+.Day-Card {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.Day-Card:last-child {
+  margin-bottom: 0;
+}
+
+.WeatherDaily-Card {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+
+/* ============== */
+
+.Forecast-Container{
+  margin-bottom: 20px;
+}
+
+/* .Day-Title {
+  font-size: 20px;
+  margin: 5px;
+}
+
+.Time-Period {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(1px);
+  border-radius: 10px;
+  padding: 10px;
+  text-align: center;
+}  */
+
+/* ============== */
+
+.forecast-item {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(1px);
+  border-radius: 10px;
+  padding: 10px;
+  text-align: center;
+}
+
+.forecast-title {
+  font-size: 20px;
+  margin: 5px;
+}
+
+.forecast-hr {
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(-5px);
+  margin: 0 -10px;
+}
+
+.forecast-icon {
+  font-size: 55px;
+}
+
+.forecast-temperature {
+  font-size: 30px;
+}
+
+/* ============== Header ============== */
+/* ============== Header ============== */
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+
+.header-day {
+  font-size: 23px;
+}
+
+.header-time {
+  margin-top: 20px;
+  font-size: 30px;
+}
+
+.header-date {
+  font-size: 23px;
+}
+
+/* =================== */
+
+@media (max-width: 500px) {
+  .Day-Card {
+    display: grid;
+    justify-content: center;
+    gap: 10px;
+  }
+  .WeatherDaily-Container {
+    display: grid;
+    justify-content: center;
+    text-align: center;
+  }
+  .WeatherDaily-Card {
+    display: grid;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+
+  .day {
+    /* margin-bottom: 10px; */
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    min-width: 150px;
+    width: 100%;
+  }
+  
+  .day-title {
+    transform: none;
+    width: 100%;
+    /* margin-left: -15px; */
+  }
+  
+  .day-hr {
+    border: 1px solid rgba(255, 255, 255, 0.215);
+    height: 0;
+    margin: 0 -20px;
+  }
+  
+  .day-icon {
+    margin-left: 10px;
+    margin-right: 10px;
+    font-size: 50px;
+  }
+  
+  .temps {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    width: 100%;
+  }
+  
+  .temps span {
+    display: grid;
+    width: 100%;
+  }
+}
+
+@media (max-width: 390px) {
+  .header {
+    display: grid;
+    justify-content: center;
+  }
+  .CurrentWeather-form {
+    display: grid;
+  }
+}

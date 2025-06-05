@@ -2,8 +2,6 @@
 
 To run this project, you need to either download it to your desktop or do it via git. In the code editor console, write:
 
-npm install
+1. npm install
 
-After this write:
-
-npm run dev
+2. npm run dev
